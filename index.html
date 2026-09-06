@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#07051a">
+    <meta name="description" content="QH Gaming Store — Gaming, technology and entertainment.">
+
+    <title>QH Gaming Store</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=Orbitron:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     AMBIENT BACKGROUND
+========================================================= -->
+
+<div class="ambient-background" aria-hidden="true">
+    <div class="ambient-orb orb-one"></div>
+    <div class="ambient-orb orb-two"></div>
+    <div class="ambient-orb orb-three"></div>
+    <div class="ambient-grid"></div>
+    <div class="ambient-noise"></div>
+</div>
+
+
+<!-- =========================================================
+     ANNOUNCEMENT BAR
+========================================================= -->
+
+<div class="announcement-bar">
+    <div class="announcement-track">
+        <span data-i18n="announcement">
+            NEW ARRIVALS ARE HERE • LEVEL UP YOUR SETUP
+        </span>
+
+        <span class="announcement-dot"></span>
+
+        <span data-i18n="delivery">
+            FAST DELIVERY ACROSS JORDAN
+        </span>
+    </div>
+</div>
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header class="site-header" id="siteHeader">
+
+    <div class="header-inner">
+
+        <!-- Logo -->
+        <a href="#home" class="brand" aria-label="QH Gaming Store home">
+
+            <div class="brand-mark">
+                <span>Q</span>
+                <span>H</span>
+            </div>
+
+            <div class="brand-text">
+                <strong>QH</strong>
+                <small>GAMING STORE</small>
+            </div>
+
+        </a>
+
+
+        <!-- Desktop Navigation -->
+
+        <nav class="desktop-nav" aria-label="Main navigation">
+
+            <a href="#home" class="nav-link active" data-i18n="navHome">
+                Home
+            </a>
+
+            <a href="#categories" class="nav-link" data-i18n="navCategories">
+                Categories
+            </a>
+
+            <a href="#new-arrivals" class="nav-link" data-i18n="navNew">
+                New Arrivals
+            </a>
+
+            <a href="#shop" class="nav-link" data-i18n="navShop">
+                Shop
+            </a>
+
+            <a href="#about" class="nav-link" data-i18n="navAbout">
+                About
+            </a>
+
+        </nav>
+
+
+        <!-- Header Actions -->
+
+        <div class="header-actions">
+
+            <!-- Search -->
+
+            <button
+                class="icon-button"
+                id="searchButton"
+                aria-label="Search"
+                type="button"
+            >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="11" cy="11" r="6.5"></circle>
+                    <path d="M16 16L21 21"></path>
+                </svg>
+            </button>
+
+
+            <!-- Language -->
+
+            <button
+                class="language-switch"
+                id="languageSwitch"
+                type="button"
+                aria-label="Switch language"
+            >
+                <span class="language-option active" data-language="en">
+                    EN
+                </span>
+
+                <span class="language-divider"></span>
+
+                <span class="language-option" data-language="ar">
+                    العربية
+                </span>
+
+                <span class="language-slider"></span>
+            </button>
+
+
+            <!-- Account -->
+
+            <button
+                class="icon-button account-button"
+                id="accountButton"
+                aria-label="Account"
+                type="button"
+            >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="8" r="3.5"></circle>
+                    <path d="M5 20c.8-4 3.1-6 7-6s6.2 2 7 6"></path>
+                </svg>
+            </button>
+
+
+            <!-- Cart -->
+
+            <button
+                class="cart-button"
+                id="cartButton"
+                type="button"
+                aria-label="Shopping cart"
+            >
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M3 4h2l2.1 10.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 1.9-1.4L21 8H7"></path>
+                    <circle cx="10" cy="20" r="1"></circle>
+                    <circle cx="18" cy="20" r="1"></circle>
+                </svg>
+
+                <span class="cart-count" id="cartCount">0</span>
+            </button>
+
+
+            <!-- Mobile menu -->
+
+            <button
+                class="mobile-menu-button"
+                id="mobileMenuButton"
+                aria-label="Open menu"
+                aria-expanded="false"
+                type="button"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </div>
+
+</header>
+
+
+<!-- =========================================================
+     MOBILE NAVIGATION
+========================================================= -->
+
+<div class="mobile-navigation" id="mobileNavigation">
+
+    <div class="mobile-nav-inner">
+
+        <a href="#home" data-i18n="navHome">Home</a>
+        <a href="#categories" data-i18n="navCategories">Categories</a>
+        <a href="#new-arrivals" data-i18n="navNew">New Arrivals</a>
+        <a href="#shop" data-i18n="navShop">Shop</a>
+        <a href="#about" data-i18n="navAbout">About</a>
+
+        <div class="mobile-language">
+
+            <button
+                class="mobile-language-option active"
+                data-mobile-language="en"
+                type="button"
+            >
+                English
+            </button>
+
+            <button
+                class="mobile-language-option"
+                data-mobile-language="ar"
+                type="button"
+            >
+                العربية
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<main>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero-section" id="home">
+
+    <div class="hero-content">
+
+        <div class="hero-eyebrow">
+            <span class="eyebrow-line"></span>
+
+            <span data-i18n="heroEyebrow">
+                JORDAN'S GAMING DESTINATION
+            </span>
+        </div>
+
+
+        <h1 class="hero-title">
+
+            <span data-i18n="heroTitleOne">
+                PLAY.
+            </span>
+
+            <span class="gradient-text" data-i18n="heroTitleTwo">
+                UNLIMITED.
+            </span>
+
+            <span data-i18n="heroTitleThree">
+                YOUR WAY.
+            </span>
+
+        </h1>
+
+
+        <p class="hero-description" data-i18n="heroDescription">
+            Discover consoles, games, PCs, accessories and everything you need to build your ultimate setup.
+        </p>
+
+
+        <div class="hero-actions">
+
+            <a href="#shop" class="primary-button">
+                <span data-i18n="shopNow">
+                    Shop Now
+                </span>
+
+                <span class="button-arrow">↗</span>
+            </a>
+
+            <a href="#categories" class="secondary-button">
+                <span data-i18n="exploreCategories">
+                    Explore Categories
+                </span>
+            </a>
+
+        </div>
+
+
+        <div class="hero-stats">
+
+            <div class="hero-stat">
+                <strong>11+</strong>
+                <span data-i18n="statCategories">Categories</span>
+            </div>
+
+            <div class="stat-separator"></div>
+
+            <div class="hero-stat">
+                <strong>100%</strong>
+                <span data-i18n="statGaming">Gaming</span>
+            </div>
+
+            <div class="stat-separator"></div>
+
+            <div class="hero-stat">
+                <strong>QH</strong>
+                <span data-i18n="statJordan">Local Store</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Hero Visual -->
+
+    <div class="hero-visual">
+
+        <div class="hero-image-frame">
+
+            <div class="hero-image-glow"></div>
+
+            <img
+                src="https://images.unsplash.com/photo-1606144042614-b2417e99c4e3?auto=format&fit=crop&w=1800&q=90"
+                alt="Gaming controller"
+                class="hero-image"
+            >
+
+            <div class="hero-image-overlay"></div>
+
+            <div class="hero-floating-card hero-card-top">
+
+                <span class="floating-label" data-i18n="featured">
+                    FEATURED
+                </span>
+
+                <strong>PLAYSTATION</strong>
+
+                <small data-i18n="nextLevel">
+                    THE NEXT LEVEL
+                </small>
+
+            </div>
+
+
+            <div class="hero-floating-card hero-card-bottom">
+
+                <span class="status-dot"></span>
+
+                <span data-i18n="availableNow">
+                    AVAILABLE NOW
+                </span>
+
+            </div>
+
+        </div>
+
+        <div class="hero-orbit orbit-one"></div>
+        <div class="hero-orbit orbit-two"></div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CATEGORY INTRO
+========================================================= -->
+
+<section class="section category-section" id="categories">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="section-kicker" data-i18n="discover">
+                DISCOVER
+            </span>
+
+            <h2 data-i18n="categoryTitle">
+                Everything Gaming.
+            </h2>
+        </div>
+
+        <p data-i18n="categoryDescription">
+            From consoles to components, discover the products that make your setup yours.
+        </p>
+
+    </div>
+
+
+    <div class="category-grid" id="categoryGrid">
+        <!-- Generated by JavaScript -->
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     NEW ARRIVALS
+========================================================= -->
+
+<section class="new-arrivals-section" id="new-arrivals">
+
+    <div class="new-arrivals-background"></div>
+
+    <div class="section new-arrivals-inner">
+
+        <div class="section-heading new-arrivals-heading">
+
+            <div>
+                <span class="section-kicker" data-i18n="fresh">
+                    FRESH IN
+                </span>
+
+                <h2 data-i18n="newArrivals">
+                    New Arrivals.
+                </h2>
+            </div>
+
+            <div class="arrival-controls">
+
+                <button
+                    type="button"
+                    class="arrival-control"
+                    id="arrivalPrevious"
+                    aria-label="Previous product"
+                >
+                    ←
+                </button>
+
+                <div class="arrival-progress">
+                    <span id="arrivalProgressBar"></span>
+                </div>
+
+                <button
+                    type="button"
+                    class="arrival-control"
+                    id="arrivalNext"
+                    aria-label="Next product"
+                >
+                    →
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="arrival-showcase" id="arrivalShowcase">
+            <!-- Generated by JavaScript -->
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SHOP
+========================================================= -->
+
+<section class="section shop-section" id="shop">
+
+    <div class="section-heading shop-heading">
+
+        <div>
+            <span class="section-kicker" data-i18n="collection">
+                THE COLLECTION
+            </span>
+
+            <h2 data-i18n="shopTitle">
+                Find Your Gear.
+            </h2>
+        </div>
+
+        <button class="text-button" id="viewAllProducts" type="button">
+            <span data-i18n="viewAll">
+                View All
+            </span>
+
+            <span>↗</span>
+        </button>
+
+    </div>
+
+
+    <!-- Product Filters -->
+
+    <div class="product-toolbar">
+
+        <div class="category-filters" id="categoryFilters">
+            <!-- Generated -->
+        </div>
+
+        <button
+            class="filter-button"
+            id="filterButton"
+            type="button"
+        >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 7h16M7 12h10M10 17h4"></path>
+            </svg>
+
+            <span data-i18n="filters">
+                Filters
+            </span>
+        </button>
+
+    </div>
+
+
+    <!-- Products -->
+
+    <div class="products-grid" id="productsGrid">
+        <!-- Generated by JavaScript -->
+    </div>
+
+
+    <div class="empty-products" id="emptyProducts">
+
+        <div class="empty-icon">QH</div>
+
+        <h3 data-i18n="noProducts">
+            No products found.
+        </h3>
+
+        <p data-i18n="tryDifferent">
+            Try another category or search term.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SETUP EXPERIENCE
+========================================================= -->
+
+<section class="setup-section">
+
+    <div class="setup-visual">
+
+        <img
+            src="https://images.unsplash.com/photo-1593305841991-05c297ba4575?auto=format&fit=crop&w=1800&q=90"
+            alt="Gaming setup"
+            loading="lazy"
+        >
+
+        <div class="setup-image-overlay"></div>
+
+    </div>
+
+
+    <div class="setup-content">
+
+        <span class="section-kicker" data-i18n="yourSetup">
+            YOUR SETUP
+        </span>
+
+        <h2 data-i18n="setupTitle">
+            Build something<br>
+            <span class="gradient-text">yours.</span>
+        </h2>
+
+        <p data-i18n="setupDescription">
+            Your setup should match the way you play. Find the console, display, audio and accessories that complete your experience.
+        </p>
+
+        <a href="#shop" class="primary-button">
+
+            <span data-i18n="buildSetup">
+                Build Your Setup
+            </span>
+
+            <span>↗</span>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     BENEFITS
+========================================================= -->
+
+<section class="section benefits-section">
+
+    <div class="benefits-grid">
+
+        <article class="benefit-card">
+
+            <div class="benefit-number">01</div>
+
+            <div class="benefit-icon">
+                ✦
+            </div>
+
+            <h3 data-i18n="benefitOneTitle">
+                Authentic Gear
+            </h3>
+
+            <p data-i18n="benefitOneText">
+                Shop gaming products selected for quality and reliability.
+            </p>
+
+        </article>
+
+
+        <article class="benefit-card">
+
+            <div class="benefit-number">02</div>
+
+            <div class="benefit-icon">
+                ◈
+            </div>
+
+            <h3 data-i18n="benefitTwoTitle">
+                Local Delivery
+            </h3>
+
+            <p data-i18n="benefitTwoText">
+                Convenient delivery options across Jordan.
+            </p>
+
+        </article>
+
+
+        <article class="benefit-card">
+
+            <div class="benefit-number">03</div>
+
+            <div class="benefit-icon">
+                ⌁
+            </div>
+
+            <h3 data-i18n="benefitThreeTitle">
+                Secure Shopping
+            </h3>
+
+            <p data-i18n="benefitThreeText">
+                A shopping experience designed around your security.
+            </p>
+
+        </article>
+
+
+        <article class="benefit-card">
+
+            <div class="benefit-number">04</div>
+
+            <div class="benefit-icon">
+                +
+            </div>
+
+            <h3 data-i18n="benefitFourTitle">
+                Gaming Support
+            </h3>
+
+            <p data-i18n="benefitFourText">
+                Real people who understand gaming and technology.
+            </p>
+
+        </article>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     ABOUT
+========================================================= -->
+
+<section class="section about-section" id="about">
+
+    <div class="about-content">
+
+        <span class="section-kicker" data-i18n="aboutKicker">
+            ABOUT QH
+        </span>
+
+        <h2 data-i18n="aboutTitle">
+            More than a store.
+        </h2>
+
+        <p data-i18n="aboutText">
+            QH Gaming Store is built around one simple idea: gaming should be easier to enjoy. Whether you're upgrading your setup, looking for your next game or searching for the perfect accessory, QH brings it together in one place.
+        </p>
+
+        <a href="#shop" class="outline-button">
+            <span data-i18n="discoverQH">
+                Discover QH
+            </span>
+
+            <span>↗</span>
+        </a>
+
+    </div>
+
+
+    <div class="about-visual">
+
+        <div class="about-glow"></div>
+
+        <div class="about-logo">
+            <span>Q</span>
+            <span>H</span>
+        </div>
+
+        <div class="about-ring ring-one"></div>
+        <div class="about-ring ring-two"></div>
+        <div class="about-ring ring-three"></div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     SOCIAL CTA
+========================================================= -->
+
+<section class="social-section">
+
+    <div class="social-content">
+
+        <span class="section-kicker">
+            QH ONLINE
+        </span>
+
+        <h2 data-i18n="socialTitle">
+            Stay in the game.
+        </h2>
+
+        <p data-i18n="socialText">
+            Follow QH for new arrivals, gaming drops, deals and what's happening next.
+        </p>
+
+        <div class="social-actions">
+
+            <a
+                href="#"
+                class="social-button"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                Instagram
+                <span>↗</span>
+            </a>
+
+            <a
+                href="#"
+                class="social-button"
+                target="_blank"
+                rel="noopener noreferrer"
+            >
+                WhatsApp
+                <span>↗</span>
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FINAL CTA
+========================================================= -->
+
+<section class="final-cta">
+
+    <div class="final-cta-glow"></div>
+
+    <div class="final-cta-content">
+
+        <span class="section-kicker">
+            QH GAMING STORE
+        </span>
+
+        <h2 data-i18n="finalTitle">
+            READY TO<br>
+            <span>LEVEL UP?</span>
+        </h2>
+
+        <a href="#shop" class="primary-button large-button">
+
+            <span data-i18n="startShopping">
+                Start Shopping
+            </span>
+
+            <span>↗</span>
+
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer class="site-footer">
+
+    <div class="footer-main">
+
+        <div class="footer-brand">
+
+            <a href="#home" class="brand">
+
+                <div class="brand-mark">
+                    <span>Q</span>
+                    <span>H</span>
+                </div>
+
+                <div class="brand-text">
+                    <strong>QH</strong>
+                    <small>GAMING STORE</small>
+                </div>
+
+            </a>
+
+            <p data-i18n="footerDescription">
+                Gaming. Technology. Entertainment.
+            </p>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4 data-i18n="footerShop">
+                Shop
+            </h4>
+
+            <a href="#categories">PlayStation</a>
+            <a href="#categories">Xbox</a>
+            <a href="#categories">Nintendo</a>
+            <a href="#categories">PC</a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4 data-i18n="footerExplore">
+                Explore
+            </h4>
+
+            <a href="#new-arrivals" data-i18n="navNew">
+                New Arrivals
+            </a>
+
+            <a href="#shop" data-i18n="navShop">
+                Shop
+            </a>
+
+            <a href="#about" data-i18n="navAbout">
+                About
+            </a>
+
+        </div>
+
+
+        <div class="footer-column">
+
+            <h4 data-i18n="footerHelp">
+                Help
+            </h4>
+
+            <a href="#" data-i18n="footerContact">
+                Contact
+            </a>
+
+            <a href="#" data-i18n="footerDelivery">
+                Delivery
+            </a>
+
+            <a href="#" data-i18n="footerTerms">
+                Terms
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <span>
+            © <span id="currentYear"></span> QH Gaming Store
+        </span>
+
+        <span data-i18n="footerMade">
+            Built for gamers.
+        </span>
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     SEARCH OVERLAY
+========================================================= -->
+
+<div class="search-overlay" id="searchOverlay">
+
+    <div class="search-panel">
+
+        <div class="search-header">
+
+            <span class="section-kicker" data-i18n="search">
+                SEARCH
+            </span>
+
+            <button
+                class="close-button"
+                id="closeSearch"
+                type="button"
+                aria-label="Close search"
+            >
+                ×
+            </button>
+
+        </div>
+
+
+        <div class="search-input-wrapper">
+
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+                <circle cx="11" cy="11" r="6.5"></circle>
+                <path d="M16 16L21 21"></path>
+            </svg>
+
+            <input
+                type="search"
+                id="searchInput"
+                placeholder="Search products..."
+                data-i18n-placeholder="searchPlaceholder"
+                autocomplete="off"
+            >
+
+        </div>
+
+
+        <div class="search-results" id="searchResults"></div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     CART DRAWER
+========================================================= -->
+
+<div class="drawer-backdrop" id="drawerBackdrop"></div>
+
+<aside class="cart-drawer" id="cartDrawer">
+
+    <div class="drawer-header">
+
+        <div>
+            <span class="section-kicker" data-i18n="yourCart">
+                YOUR CART
+            </span>
+
+            <h2 data-i18n="shoppingCart">
+                Shopping Cart
+            </h2>
+        </div>
+
+        <button
+            class="close-button"
+            id="closeCart"
+            type="button"
+            aria-label="Close cart"
+        >
+            ×
+        </button>
+
+    </div>
+
+
+    <div class="cart-items" id="cartItems">
+        <!-- Generated -->
+    </div>
+
+
+    <div class="cart-footer">
+
+        <div class="cart-total-row">
+
+            <span data-i18n="subtotal">
+                Subtotal
+            </span>
+
+            <strong id="cartTotal">
+                0 JOD
+            </strong>
+
+        </div>
+
+        <button
+            class="primary-button checkout-button"
+            id="checkoutButton"
+            type="button"
+        >
+            <span data-i18n="checkout">
+                Checkout
+            </span>
+
+            <span>↗</span>
+        </button>
+
+        <small data-i18n="checkoutNotice">
+            Checkout and online payments will be connected in the next commerce phase.
+        </small>
+
+    </div>
+
+</aside>
+
+
+<!-- =========================================================
+     PRODUCT MODAL
+========================================================= -->
+
+<div class="product-modal" id="productModal">
+
+    <div class="product-modal-backdrop" id="productModalBackdrop"></div>
+
+    <div class="product-modal-card">
+
+        <button
+            class="modal-close"
+            id="closeProductModal"
+            type="button"
+            aria-label="Close product"
+        >
+            ×
+        </button>
+
+        <div id="productModalContent">
+            <!-- Generated -->
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     TOAST
+========================================================= -->
+
+<div class="toast" id="toast">
+
+    <span class="toast-icon">✓</span>
+
+    <span id="toastMessage">
+        Added to cart
+    </span>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
